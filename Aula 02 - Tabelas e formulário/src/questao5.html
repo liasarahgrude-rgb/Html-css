@@ -1,0 +1,57 @@
+<!-- Crie um único arquivo HTML chamado projeto_suporte.html. 
+Crie um título <h1> para a página: "Sistema de Pedido de Suporte Técnico". 
+Tabela de Conteúdo (Lista): Crie uma Lista Não Ordenada "Instruções", "Dados do Cliente" e "Detalhes do Problema".
+Crie um único formulário (<form>) para todo o pedido. 
+Seção: Dados do Cliente (Inputs Simples): Campo Nome Completo . Campo E-mail Campo Telefone . 
+Seção: Detalhes do Problema (Seleção e Texto Longo): Tipo de Problema (Seleção Única): "Hardware (Componente Físico)", "Software (Programa)" ou "Rede (Conexão)". 
+Urgência (Lista Suspensa):cliente escolha o nível de urgência: "Baixa", "Média" ou "Alta". 
+Descrição do Problema (Texto Longo): Use <textarea> para a descrição detalhada (mínimo 5 linhas). 
+Botão de Envio: Adicione o botão type="submit" com o texto "Enviar Pedido de Ajuda". -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de Pedido de Suporte Técnico</h1>
+    <ul>
+        <li>Instruções</li>
+        <li>Dados do cliente</li>
+        <li>Detalhes do problema</li>
+    </ul>
+    <form action = "/enviar-dados" method = "post">
+
+        <h2>Dados do cliente</h2>
+        <p>Preencha seus dados:</p>
+        <p><input type="text" name="nome" placeholder="Seu nome completo" required></p>
+        <p><input type="email" name="email" placeholder="Seu email" required></p>
+        <p><input type="number" name="telefone" placeholder="Seu número de telefone" required></p>
+
+        <p><h2>Detalhes do problema</h2></p>
+        <p>Qual tipo de problema?</p>
+        <input type = "radio" id = "Componente Físico" name = "tipo" value = "Hardware">
+        <label for = "Componente Físico">Hardware</label>
+        <input type = "radio" id = "Programa" name = "tipo" value = "Software">
+        <label for = "Programa">Software</label>
+        <input type = "radio" id = "Conexão" name = "tipo" value = "Rede">
+        <label for = "Conexão">Rede</label>
+
+        <p>Qual nível de urgência do problema?</p>
+        <select name="Nível de urgência" id="urgência">
+            <option value="b">Baixa</option>
+            <option value="m">Média</option>
+            <option value="a">Alta</option>
+        </select>
+
+        <p>Descreva o seu problema: </p>
+        <textarea name="Descrição" id="" cols="30" rows="10"></textarea>
+        <!-- cols : Define a largura visível da caixa com base na quantidade média de caracteres (colunas) por linha.
+        Neste caso, ela terá o espaço de aproximadamente 30 caracteres. -->
+        <!--  Define a altura visível da caixa pelo número de linhas de texto. 
+        Neste caso, ela terá a altura de 10 linhas antes de começar a mostrar uma barra de rolagem. -->
+        <p><button type="Submit" >Enviar Pedido de Ajuda</button></p>
+    </form>
+</body>
+</html>

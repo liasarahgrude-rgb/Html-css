@@ -1,0 +1,19 @@
+h1 {
+    color:aliceblue;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+body {
+    color: white;
+    background-color: #F692B0;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+/* https://htmlcolorcodes.com/color-wheel/ */
+/* site para seleção de cores em hexadecimal */
+/* Fonte com serifa (Serif): Tem pontinhas decorativas nas extremidades (exemplo: Times New Roman). 
+Transmite um estilo clássico ou tradicional.
+Fonte sem serifa (Sans-serif): Tem traços retos e limpos, sem pontinhas (exemplo: Arial ou Roboto).
+É moderna e muito usada em telas digitais por facilitar a leitura. */

@@ -14,10 +14,10 @@ body {
     text-align: left;
 }
 
-.praia-futuro {
+.praia-futuro {                /*Chamando a classe "praia-futuro"*/
     padding: 15px;             /*Espaçamento interno*/
     border: 2px solid #ccc;  /* Espessura: 2px | Estilo: sólida | Cor: cinza claro */
-    list-style-position: inside; 
+    list-style-position: inside; /* Coloca a bolinha da lista dentro do bloco */
 }
 
 .praia-iracema {
@@ -38,9 +38,10 @@ ul {
   gap: 20px;                 /* Cria um espaço entre cada card */
   padding: 0;                /* Remove o recuo padrão da lista */
 }
-li h3 {
-  display: inline;          /* Faz o título ficar na mesma linha da bolinha da lista */
+li h3 {                      /* Seleciona o título dentro do item da lista */
+  display: inline;           /* Faz o título ficar na mesma linha da bolinha da lista */
 }
+
 /* https://htmlcolorcodes.com/color-wheel/ */
 /* site para seleção de cores em hexadecimal */
 /* Fonte com serifa (Serif): Tem pontinhas decorativas nas extremidades (exemplo: Times New Roman). 
